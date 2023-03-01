@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Job Placement Prediction </title>
+    <style>
+        body{
+            background-image: url(https://www.abclrich.com/asset/images/job_placement.jpg);
+            background-size: cover;
+            /* display: flex; */
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1> Job Placement Prediction </h1>
+    <form action="/prediction" method="get">
+
+        <label>Gender:</label>
+        <select name = "gender">
+            <option value = "M">Male</option>
+            <option value = "F">Female</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label >SSC Percentage : </label>
+        <input type="text" name="ssc_p">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>SSC Board:</label>
+        <select name = "ssc_b">
+            <option value = "Central">Central</option>
+            <option value = "Others">Others</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <label >HSC Percentage : </label>
+        <input type="text" name="hsc_p">
+        </select>
+
+        <br>
+        <br>
+
+        <label>HSC Board:</label>
+        <select name = "hsc_b">
+            <option value = "Central">Central</option>
+            <option value = "Others">Others</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>HSC Site:</label>
+        <select name = "hsc_s">
+            <option value = "Commerce">Commerce</option>
+            <option value = "Science">Science</option>
+            <option value = "Arts">Arts</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label >degree Percentage : </label>
+        <input type="text" name="degree_p">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Degree Site:</label>
+        <select name = "degree_t">
+            <option value = "Comm&Mgmt">Comm&Mgmt</option>
+            <option value = "Sci&Tech">Sci&Tech</option>
+            <option value = "Others">Others</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Work Experience:</label>
+        <select name = "workex">
+            <option value = "Yes">Yes</option>
+            <option value = "No">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label >etest_p : </label>
+        <input type="text" name="etest_p">
+        </select>
+
+        <br>
+        <br>
+
+        <label>MBA Specialisation:</label>
+        <select name = "specialisation">
+            <option value = "Mkt&Fin">Mkt&Fin</option>
+            <option value = "Mkt&HR">Mkt&HR</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label >mba_p : </label>
+        <input type="text" name="mba_p">
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" value ="SUBMIT">
+
+        <br>
+
+        <h4><strong>Your will be : <b> {{ prediction }}  </b>  </strong></h4>
+
+    
+    </form>
+
+</body>
+</html>
+
+
