@@ -8,10 +8,10 @@ class Placement():
     
 
     def __load_model(self):
-        with open (config.Logistic_Model,"rb") as f:
+        with open (r"artifacts/Logistic_Model","rb") as f:
             self.logistic_model= pickle.load(f)
 
-        with open (config.Project_Data,"r") as f:
+        with open (r"artifacts/Project_data.json","r") as f:
             self.data = json.load(f)
         
         
